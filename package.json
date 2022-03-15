@@ -1,0 +1,22 @@
+{
+  "name": "bikeshop",
+  "version": "1.0.0",
+  "description": "MERN bikeshop ecommerce project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorhongjen/Bike-shop-ecommerce.git"
+  },
+  "author": "Victor Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/victorhongjen/Bike-shop-ecommerce/issues"
+  },
+  "homepage": "https://github.com/victorhongjen/Bike-shop-ecommerce#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
