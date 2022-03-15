@@ -1,19 +1,21 @@
-import React, { useState, useEffect } from 'react'
+import React, {useState, useEffect} from 'react'
 import { Row, Col } from 'react-bootstrap'
 import Product from '../components/Product'
 import axios from 'axios'
 
+
 const HomeScreen = () => { // bring in products, loop through products and output each one with own component
     const [products, setProducts] = useState([])
-    //useEffect will run the callback function as soon as the component loads
-    useEffect(() => { // make axios request here
+
+    useEffect(() => {
         const fetchProducts = async () => {
             const { data } = await axios.get('/api/products')
 
             setProducts(data)
         }
+
         fetchProducts()
-    }, [])//second argument is what's being passed when page changes. Now is []
+    }, [])
     return (
         <>
             <h1>Latest Builds</h1>

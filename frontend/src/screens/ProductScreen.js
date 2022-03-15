@@ -8,13 +8,24 @@ import {
     Button,
 } from 'react-bootstrap'
 import Rating from '../components/Rating'
-import products from '../products'
-import { Link, useParams } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { Link, useParams } from 'react-router-dom'  
+import axios from 'axios'
 
-const ProductScreen = () => {
-    const params = useParams()
-    const product = products.find((p) => p._id === params.id)
+const ProductScreen = ( {match} ) => {
+    // const params = useParams()
+    // const product = products.find((p) => p._id === params.id) fetching from frontend
+    const { id } = useParams()
+    const [product, setProduct] = useState({})
+
+    useEffect(() => {
+        const fetchProduct = async () => {
+        const { data } = await axios.get(`/api/products/${id}`)
+
+        setProduct(data)
+        }
+
+        fetchProduct()
+    }, [id])
 
     return (
         <>
