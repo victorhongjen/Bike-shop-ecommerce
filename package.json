@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "MERN bikeshop ecommerce project",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/victorhongjen/Bike-shop-ecommerce#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3"
   },
   "devDependencies": {

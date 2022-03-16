@@ -10,10 +10,8 @@ const HomeScreen = () => { // bring in products, loop through products and outpu
     useEffect(() => {
         const fetchProducts = async () => {
             const { data } = await axios.get('/api/products')
-
             setProducts(data)
         }
-
         fetchProducts()
     }, [])
     return (
