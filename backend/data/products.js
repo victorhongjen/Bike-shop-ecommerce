@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Specialized Rockhopper',
     image: '/images/specialized-rockhopper-by-zakwanazman-cover.jpg',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '2',
     name: 'Schwinn Paramount',
     image: '/images/schwinn-paramount-pdg-series-90-1991-by-jsn-bikes-cover.jpg',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'Peugeot Teamline 1500',
     image: '/images/peugeot-teamline-1500-1994-by-raulgarciagili-cover.jpg',
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '4',
     name: 'GT Team Avalanche',
     image: '/images/gt-team-avalanche-midnight-aurora-1991-by-maenkan-cover.jpg',
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '5',
     name: 'Diamondback Ascent',
     image: '/images/diamondback-ascent-by-saltydogcyclery-cover.jpg',
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '6',
     name: 'Orange Clockwork',
     image: '/images/orange-clockwork-p7-1994-by-paulshillington-cover.jpg',
     description:
