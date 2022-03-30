@@ -3,12 +3,15 @@ import dotenv from 'dotenv'
 import connectDB from './config/db.js'
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 import productRoutes from './routes/productRoutes.js'
+import userRoutes from './routes/userRoutes.js'
 
 dotenv.config()
 
 connectDB()
 
 const app = express()
+
+app.use(express.json())
 
 // impliment middleware, a function that has access to req res object
 app.use((req, res, next) => {
@@ -21,6 +24,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/products', productRoutes)
+app.use('/api/users', userRoutes)
 
 //create error middleware for the routes
 
