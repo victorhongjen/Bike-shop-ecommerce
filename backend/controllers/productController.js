@@ -52,7 +52,7 @@ const createProduct = asyncHandler(async (req, res) => {
     user: req.user._id, //belongs to the logged in user
     image: '/images/sample.jpg',
     brand: 'Sample Brand',
-    category: 'Sample Cagegory',
+    category: 'Sample Category',
     countInStock: 0,
     numReviews: 0,
     description: 'Sample Description',
