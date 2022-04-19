@@ -41,7 +41,7 @@ const PlaceOrderScreen = () => {
       dispatch({ type: USER_DETAILS_RESET })
       dispatch({ type: ORDER_CREATE_RESET })
     }
-  },[navigate, success])
+  },[navigate, success, dispatch, order._id])
 
   const placeOrderHandler = () => {
     console.log('igotclicked')

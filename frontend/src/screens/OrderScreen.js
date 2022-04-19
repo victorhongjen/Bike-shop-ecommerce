@@ -63,7 +63,7 @@ const OrderScreen = () => {
         setSdkReady(true)
       }
     }
-  }, [dispatch, orderId, successPay, order, successDeliver])
+  }, [dispatch, orderId, successPay, order, successDeliver, navigate, userInfo])
 
   //   const addPayPalScript = async () => {
   //     const { data: clientId } = await axios.get('/api/config/paypal')
